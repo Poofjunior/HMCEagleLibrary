@@ -17,7 +17,7 @@ Let's take some pride in our work here, and create something long-lasting!
 
 ## Other Helpful Eagle Libraries:  
 
-[STM32.lbr](https://code.google.com/p/nopilot/source/browse/trunk/hw/lib/)
-[Adafruit-Eagle-Library](https://github.com/adafruit/Adafruit-Eagle-Library)
-[Sparkfun-Eagle-Libraries](https://github.com/sparkfun/SparkFun-Eagle-Libraries)
+[STM32.lbr](https://code.google.com/p/nopilot/source/browse/trunk/hw/lib/)  
+[Adafruit-Eagle-Library](https://github.com/adafruit/Adafruit-Eagle-Library)  
+[Sparkfun-Eagle-Libraries](https://github.com/sparkfun/SparkFun-Eagle-Libraries)  
 
