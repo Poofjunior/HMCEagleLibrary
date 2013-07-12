@@ -7,6 +7,7 @@ If you're new to creating parts in Eagle, take a look here.
 
 ## Eagle Tricks:  
 [Defining GND on multiple pins] (http://dangerousprototypes.com/2012/05/30/how-to-create-eagle-parts-with-pins-that-have-the-same-name/)  
+[Printing a Bill of Materials] (http://www.cs.uml.edu/teams-academy/index.php/AT/Bom)
 
 To copy a part, symbol, or package from another library, simply open the 
 library you want to add to, open the Eagle control panel, browse for your part 

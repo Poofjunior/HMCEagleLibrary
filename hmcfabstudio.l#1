@@ -787,25 +787,25 @@ http://ww1.microchip.com/downloads/en/devicedoc/21801d.pdf</description>
 <devices>
 <device name="" package="TSSOP20">
 <connects>
-<connect gate="G$1" pin="!CS!" pad="18"/>
-<connect gate="G$1" pin="!INT!" pad="13"/>
-<connect gate="G$1" pin="!RESET!" pad="19"/>
-<connect gate="G$1" pin="!RX0BF!" pad="12"/>
-<connect gate="G$1" pin="!RX1BF!" pad="11"/>
+<connect gate="G$1" pin="!CS!" pad="13"/>
+<connect gate="G$1" pin="!INT!" pad="18"/>
+<connect gate="G$1" pin="!RESET!" pad="12"/>
+<connect gate="G$1" pin="!RX0BF!" pad="19"/>
+<connect gate="G$1" pin="!RX1BF!" pad="20"/>
 <connect gate="G$1" pin="!TX0RTS!" pad="4"/>
 <connect gate="G$1" pin="!TX1RTS!" pad="5"/>
 <connect gate="G$1" pin="!TX2RTS!" pad="7"/>
 <connect gate="G$1" pin="CLKOUT/SOF" pad="3"/>
 <connect gate="G$1" pin="NC" pad="6"/>
-<connect gate="G$1" pin="NC@2" pad="15"/>
+<connect gate="G$1" pin="NC@2" pad="16"/>
 <connect gate="G$1" pin="OSC1" pad="9"/>
 <connect gate="G$1" pin="OSC2" pad="8"/>
 <connect gate="G$1" pin="RXCAN" pad="2"/>
-<connect gate="G$1" pin="SCK" pad="14"/>
-<connect gate="G$1" pin="SI" pad="16"/>
-<connect gate="G$1" pin="SO" pad="17"/>
+<connect gate="G$1" pin="SCK" pad="17"/>
+<connect gate="G$1" pin="SI" pad="15"/>
+<connect gate="G$1" pin="SO" pad="14"/>
 <connect gate="G$1" pin="TXCAN" pad="1"/>
-<connect gate="G$1" pin="VDD" pad="20"/>
+<connect gate="G$1" pin="VDD" pad="11"/>
 <connect gate="G$1" pin="VSS" pad="10"/>
 </connects>
 <technologies>
