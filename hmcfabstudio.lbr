@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1059,6 +1059,25 @@ thin small outline package</description>
 <smd name="G1" x="0.5" y="1.7" dx="0.375" dy="0.5" layer="1"/>
 <smd name="D2" x="0" y="1.7" dx="0.375" dy="0.5" layer="1"/>
 </package>
+<package name="11P_FFC_1MM">
+<smd name="P$1" x="0" y="0" dx="0.61" dy="2" layer="1"/>
+<smd name="P$2" x="1" y="0" dx="0.61" dy="2" layer="1"/>
+<smd name="P$3" x="2" y="0" dx="0.61" dy="2" layer="1"/>
+<smd name="P$4" x="3" y="0" dx="0.61" dy="2" layer="1"/>
+<smd name="P$5" x="4" y="0" dx="0.61" dy="2" layer="1"/>
+<smd name="P$6" x="5" y="0" dx="0.61" dy="2" layer="1"/>
+<smd name="P$7" x="6" y="0" dx="0.61" dy="2" layer="1"/>
+<smd name="P$8" x="7" y="0" dx="0.61" dy="2" layer="1"/>
+<smd name="P$9" x="8" y="0" dx="0.61" dy="2" layer="1"/>
+<smd name="P$10" x="9" y="0" dx="0.61" dy="2" layer="1"/>
+<smd name="P$11" x="10" y="0" dx="0.61" dy="2" layer="1"/>
+<smd name="P$12" x="11" y="0" dx="0.61" dy="2" layer="1"/>
+<rectangle x1="-4.33" y1="-4.6" x2="-1.65" y2="-1" layer="1"/>
+<rectangle x1="12.65" y1="-4.6" x2="15.33" y2="-1" layer="1"/>
+<wire x1="-4.46" y1="-5" x2="-4.46" y2="-8.3" width="0.127" layer="21"/>
+<wire x1="-4.46" y1="-8.3" x2="15.46" y2="-8.3" width="0.127" layer="21"/>
+<wire x1="15.46" y1="-8.3" x2="15.46" y2="-5" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -1673,6 +1692,26 @@ TSSOP20</text>
 <vertex x="-0.3175" y="0"/>
 <vertex x="-1.27" y="-0.9525"/>
 </polygon>
+</symbol>
+<symbol name="1X12_FFC_HEADER_FEMALE">
+<wire x1="0" y1="0" x2="0" y2="33.02" width="0.254" layer="94"/>
+<wire x1="0" y1="33.02" x2="10.16" y2="33.02" width="0.254" layer="94"/>
+<wire x1="10.16" y1="33.02" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="P$1" x="15.24" y="30.48" length="middle" rot="R180"/>
+<pin name="P$2" x="15.24" y="27.94" length="middle" rot="R180"/>
+<pin name="P$3" x="15.24" y="25.4" length="middle" rot="R180"/>
+<pin name="P$4" x="15.24" y="22.86" length="middle" rot="R180"/>
+<pin name="P$5" x="15.24" y="20.32" length="middle" rot="R180"/>
+<pin name="P$6" x="15.24" y="17.78" length="middle" rot="R180"/>
+<pin name="P$7" x="15.24" y="15.24" length="middle" rot="R180"/>
+<pin name="P$8" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="P$9" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="P$10" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="P$11" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="P$12" x="15.24" y="2.54" length="middle" rot="R180"/>
+<text x="-5.08" y="35.56" size="1.27" layer="94">1mm Pitch Flat Flex Cable 
+Female SMD Header</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2547,6 +2586,32 @@ V_reverse = 150 [v] &lt;br&gt;</description>
 <connect gate="G$2" pin="D" pad="D2"/>
 <connect gate="G$2" pin="G" pad="G2"/>
 <connect gate="G$2" pin="S" pad="S2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="12POS_FFC_SMD_HEADER">
+<gates>
+<gate name="G$1" symbol="1X12_FFC_HEADER_FEMALE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="11P_FFC_1MM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$10" pad="P$10"/>
+<connect gate="G$1" pin="P$11" pad="P$11"/>
+<connect gate="G$1" pin="P$12" pad="P$12"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+<connect gate="G$1" pin="P$6" pad="P$6"/>
+<connect gate="G$1" pin="P$7" pad="P$7"/>
+<connect gate="G$1" pin="P$8" pad="P$8"/>
+<connect gate="G$1" pin="P$9" pad="P$9"/>
 </connects>
 <technologies>
 <technology name=""/>
